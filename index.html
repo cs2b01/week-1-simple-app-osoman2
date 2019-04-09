@@ -6,25 +6,34 @@
 </head>
     
 <body>
-        <center><b>Login</b></center>
-        <center>
+    <script type="text/javascript">
+            function valid(){
+                    var usuario=document.getElementById("us").text;
+                    var password=document.getElementById("ps").text;
+                    if (usuario==password) {
+                        alert("Felicidades, usted si está registrado")
+                    } 
+                    else {
+                         alert("Error");    
+                    }
+            }
+    </script>
+    
+     <table> 
+        <center><b>Login</b><br></center><br>
         
-        <input type = "text" placeholder="Usuario" nombre="Usuario" id = "us"/></center><br>
-        <center>
+        <tr>
+        <center><input type = "text" placeholder="Usuario" nombre="Usuario" id = "us"/></center>
+        </tr>
+        <tr>
+         <center><input type = "password" placeholder="Password" id= "ps"/></center>
+        </tr>
+        <tr>
+        <center><input type = "button"  id = "bt" onclick="valid()" value="Verificar" /></center>
+        </tr>
+    </table>
         
-         <input type = "password" placeholder="Password" id= "ps"/></center><br>
-        <center>
         
-
-        <input type = "button"  value="Entrar"  id = "bt"/></center>
-
-        
-        <script type="text/javascript">
-            
-                if (document.getElementById("us")==) {
-                    alert('Usted si está registrado')
-                } else {
-                    alert('');    
-                }
+              
 </body>
 </html>
